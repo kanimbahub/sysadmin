@@ -1,0 +1,13 @@
+---
+- name: Install MySQL database server
+  apt: name=mysql-server state=present
+
+- name: Start MySQL service
+  service:
+    name: mysql
+    state: started
+
+- name: Restart MySQL service
+  service:
+    name: mysql
+    state: restarted

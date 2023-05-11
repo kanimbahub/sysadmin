@@ -1,0 +1,8 @@
+---
+
+- hosts: all
+
+  roles:
+    - install_prerequis_sys
+
+  become: True
